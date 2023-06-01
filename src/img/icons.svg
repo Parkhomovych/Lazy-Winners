@@ -1,5 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+  <!-- logo -->
+  <symbol id="logo" viewBox="0 0 32 32">
+      <path fill="#fcf1e0" d="M3.944 20.076 14.721 2.652l.64-.674 8.236 5.491.056 3.314 2.01 3.28-8.88 14.077-12.839-8.063z" style="fill:var(--color1, #fcf1e0)"/>
+      <path fill="none" stroke="#fd9222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.743" d="M21.635 23.88 7.449 15.016m3.912-6.417 14.185 8.864M10.63 25.864l11.736-19.25m4.811 8.175c-3.04-1.899-4.234-3.384-2.278-6.592l-9.626-6.015-11.736 19.25 14.185 8.864 9.454-15.507z" style="stroke:var(--color2, #fd9222)"/>
+    </symbol>
   <!-- hero -->
     <symbol id="mob-menu-open" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M4 16h24M4 8h24M4 24h24"/>

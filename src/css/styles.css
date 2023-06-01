@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+@import url();
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./advantages.css');
@@ -18,6 +19,42 @@
 @import url('./modal.css');
 @import url('./slider.css');
 
+/* fonts */
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/AnyConv.com__MontserratAlternates-Regular.woff2);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/AnyConv.com__MontserratAlternates-Medium.woff2);
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/AnyConv.com__MontserratAlternates-SemiBold.woff2);
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/AnyConv.com__MontserratAlternates-BoldItalic.woff2);
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/AnyConv.com__MontserratAlternates-ExtraBold.woff2);
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
 :root {
   /* color */
   --black-firs-color: #111111;
@@ -30,6 +67,7 @@
   /* animation */
   --duration-and-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,4 +98,13 @@
   .container {
     max-width: 1200px;
   }
+}
+.one {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.two {
+  font-family: 'Montserrat';
+  font-weight: 400;
 }
