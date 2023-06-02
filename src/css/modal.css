@@ -1,0 +1,195 @@
+/**
+  |============================
+  | Modal BUY NOW
+  |============================
+*/
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.modal {
+  padding: 32px 24px;
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Установаем ширину окна  */
+  width: 95%;
+  max-width: 311px;
+  height: 95%;
+  max-height: 584px;
+  overflow: scroll;
+  /* Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: var(--bg-color);
+}
+/* Стили для активных классов подложки и окна */
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buynow-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.buynow-title-buy {
+  color: var(--orange-color);
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: var(--black-firs-color);
+  cursor: pointer;
+}
+
+.buynow-chocolate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  width: 263px;
+  height: 85px;
+  background: var(--white-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.buynow-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 32px;
+}
+
+.buynow-chocolate-btn {
+  width: 70px;
+  height: 29px;
+  background: var(--bg-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+
+.buynow-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/**
+  |============================
+  | Inputs
+  |============================
+*/
+
+.buynow-label {
+  margin-bottom: 18px;
+}
+
+.buynow-label:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.byunow-label-name {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+.name-input {
+  margin-bottom: 14px;
+}
+
+.buynow-input {
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  outline: none;
+  background-color: var(--bg-color);
+}
+
+.buynow-input::placeholder {
+  padding-left: 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+/**
+  |============================
+  | Textarea
+  |============================
+*/
+
+.buynow-textarea {
+  width: 100%;
+  height: 91px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  resize: none;
+  outline: none;
+  outline: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.buynow-textarea::placeholder {
+  padding-left: 18px;
+  padding-top: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.buynow-for-btn {
+  display: block;
+  width: 120px;
+  height: 41px;
+  color: var(--white-color);
+  background: var(--orange-color);
+  border-radius: 100px;
+  border: none;
+}
+
+.buynow-for-btn:hover {
+  background: var(--hover-btn-color);
+  color: var(--orange-color);
+}
