@@ -1,6 +1,10 @@
 /**
   |============================
+<<<<<<< Updated upstream
   | Modal BUY NOW
+=======
+  | Modal-BUY NOW
+>>>>>>> Stashed changes
   |============================
 */
 .overlay {
@@ -17,17 +21,32 @@
   z-index: 20;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Стили для модальных окон */
+
+>>>>>>> Stashed changes
 .modal {
   padding: 32px 24px;
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
+<<<<<<< Updated upstream
   /*  Установаем ширину окна  */
+=======
+
+  /*  Установаем ширину окна  */
+
+>>>>>>> Stashed changes
   width: 95%;
   max-width: 311px;
   height: 95%;
   max-height: 584px;
   overflow: scroll;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
   /* Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
@@ -35,16 +54,29 @@
   transform: translate(-50%, -50%);
   z-index: 30; /* Должен быть выше чем у подложки*/
 
+<<<<<<< Updated upstream
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   background-color: var(--bg-color);
 }
 /* Стили для активных классов подложки и окна */
+=======
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: #e2e2e2;
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+>>>>>>> Stashed changes
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
 }
+<<<<<<< Updated upstream
 
 .buynow-title {
   text-align: center;
@@ -193,3 +225,5 @@
   background: var(--hover-btn-color);
   color: var(--orange-color);
 }
+=======
+>>>>>>> Stashed changes
