@@ -209,11 +209,17 @@
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  padding-left: 7px;
+  padding-top: 7px;
+}
+
+.buynow-textarea:focus {
+  border-color: var(--orange-color);
 }
 
 .buynow-textarea::placeholder {
-  padding-left: 18px;
-  padding-top: 14px;
+  padding-left: 11px;
+  padding-top: 7px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
