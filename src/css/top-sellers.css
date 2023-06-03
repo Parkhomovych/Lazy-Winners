@@ -1,5 +1,4 @@
 .topsellers-title {
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -7,6 +6,20 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .topsellers-title {
+    font-size: 24px;
+    line-height: 1.17;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .topsellers-title {
+    text-shadow: none;
+  }
 }
 
 .topsellers-top {
@@ -17,6 +30,7 @@
   .topsellers-list {
     display: flex;
     gap: 16px;
+    margin-bottom: 32px;
   }
 }
 
@@ -26,6 +40,7 @@
 
 @media only screen and (min-width: 768px) {
   .topsellers-img {
+    margin-bottom: 0;
     width: 344px;
   }
 }
@@ -35,6 +50,35 @@
     width: 368px;
   }
 }
+/**
+  |============================
+  | Hidden block
+  |============================
+*/
+@media only screen and (min-width: 768px) {
+  .hidden-block {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hidden-box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topsellers-bottom-block {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .topsellers-bottom-block {
+    display: flex;
+    /* align-items: flex-start; */
+  }
+}
 
 .topsellers-text {
   font-weight: 400;
@@ -42,11 +86,18 @@
   line-height: 1.29;
   color: var(--black-firs-color);
   margin-bottom: 32px;
-  text-align: left;
+  letter-spacing: -0.02em;
 }
 @media only screen and (min-width: 768px) {
   .topsellers-text {
     width: 306px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .topsellers-text {
+    width: 407px;
   }
 }
 
@@ -70,11 +121,22 @@
 @media only screen and (min-width: 768px) {
   .js-open-modal {
     margin-right: 0;
-    margin-bottom: 0;
+    font-size: 18px;
   }
 }
 
 .js-open-modal:hover {
   background: var(--hover-btn-color);
   color: var(--orange-color);
+}
+
+/**
+  |============================
+  | Hidden three img
+  |============================
+*/
+@media only screen and (max-width: 1199px) {
+  .topsellers-hidden-img {
+    display: none;
+  }
 }
