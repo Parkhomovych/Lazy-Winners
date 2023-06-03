@@ -6,30 +6,29 @@
    
 @media only screen and (min-width: 768px) {
     .advantages-section {
-        padding: 50px 32px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .advantages-section {
-        padding: 50px;
-    }
-}
 
 .advantages-list {
-    padding: 0;
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 @media only screen and (min-width: 768px) {
     .advantages-list {
-      
-        
+        flex-wrap:wrap;
+        gap: 32px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .advantages-list {
+        flex-wrap: nowrap;
+        gap: 70px;
     }
 }
 
