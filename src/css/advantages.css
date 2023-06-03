@@ -11,7 +11,6 @@
     }
 }
 
-
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
@@ -61,8 +60,6 @@
     margin-bottom: 22px;
 
 }
-
-
 
 .advantages-subtitle {
     font-weight: 600;
