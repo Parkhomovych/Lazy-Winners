@@ -1,13 +1,10 @@
 .topsellers-title {
-<<<<<<< Updated upstream
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-=======
->>>>>>> Stashed changes
   text-align: center;
   margin-bottom: 32px;
 }
@@ -16,7 +13,6 @@
   color: var(--orange-color);
 }
 
-<<<<<<< Updated upstream
 @media only screen and (min-width: 768px) {
   .topsellers-list {
     display: flex;
@@ -24,13 +20,10 @@
   }
 }
 
-=======
->>>>>>> Stashed changes
 .topsellers-img {
   margin-bottom: 20px;
 }
 
-<<<<<<< Updated upstream
 @media only screen and (min-width: 768px) {
   .topsellers-img {
     width: 344px;
@@ -85,14 +78,3 @@
   background: var(--hover-btn-color);
   color: var(--orange-color);
 }
-=======
-.topsellers-text {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  color: var();
-  margin-bottom: 32px;
-  text-align: left;
-}
->>>>>>> Stashed changes
