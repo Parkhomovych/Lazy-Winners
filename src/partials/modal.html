@@ -5,19 +5,131 @@
   <ul class="buynow-list list">
     <li>
       <div class="buynow-chocolate">
-        <img src="../img/buy-now/100-mob.jpg" alt="" width="84" height="69" />
+        <picture>
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/100.jpg 1x, ../img/buy-now/100@2x.jpg 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/100.jpg 1x, ../img/buy-now/100@2x.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/100-mob.jpg    1x,
+              ../img/buy-now/100-mob@2x.jpg 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/100-mob.jpg    1x,
+              ../img/buy-now/100-mob@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="card-img"
+            src="../img/buy-now/100-mob.jpg"
+            alt="chocolate-nuts"
+            width="84"
+            height="69"
+            loading="lazy"
+          />
+        </picture>
         <button class="buynow-chocolate-btn" type="button">100 g</button>
       </div>
     </li>
     <li>
       <div class="buynow-chocolate">
-        <img src="../img/buy-now/200-mob.jpg" alt="" width="84" height="69" />
+        <picture>
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/200.jpg 1x, ../img/buy-now/200@2x.jpg 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/200.jpg 1x, ../img/buy-now/200@2x.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/200-mob.jpg    1x,
+              ../img/buy-now/200-mob@2x.jpg 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/200-mob.jpg    1x,
+              ../img/buy-now/200-mob@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="card-img"
+            src="../img/buy-now/200-mob.jpg"
+            alt="chocolate-bonbon-milk"
+            width="84"
+            height="69"
+            loading="lazy"
+          />
+        </picture>
         <button class="buynow-chocolate-btn" type="button">200 g</button>
       </div>
     </li>
+    <li></li>
     <li>
       <div class="buynow-chocolate">
-        <img src="../img/buy-now/300-mob.jpg" alt="" width="84" height="69" />
+        <picture>
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/300.jpg 1x, ../img/buy-now/300@2x.jpg 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/300.jpg 1x, ../img/buy-now/300@2x.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/300-mob.jpg    1x,
+              ../img/buy-now/300-mob@2x.jpg 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/300-mob.jpg    1x,
+              ../img/buy-now/300-mob@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="card-img"
+            src="../img/buy-now/300-mob.jpg"
+            alt="chocolate-bonbon-milk"
+            width="84"
+            height="69"
+            loading="lazy"
+          />
+        </picture>
         <button class="buynow-chocolate-btn" type="button">300 g</button>
       </div>
     </li>
@@ -48,24 +160,30 @@
         placeholder="Enter your email"
       />
     </label>
-    <label class="buynow-label" for="phone_ number"
+    <label class="buynow-label buynow-holder-number" for="phone_ number"
       ><span class="byunow-label-name">Phone number</span>
       <input
         class="buynow-input icon-number"
         type="tel"
         placeholder="Phone number"
       />
+      <div class="input-separator">
+        <svg class="" width="24" height="24">
+          <use href="../img/icons.svg#ua"></use>
+        </svg>
+        <p class="buynow-input-number">+380</p>
+      </div>
     </label>
     <label class="buynow-label" for="card_number"
       ><span class="byunow-label-name">Card number</span>
       <input
         class="buynow-input"
-        type="number"
+        type="text"
         pattern="3-12"
         placeholder="Enter card"
       />
       <svg class="buynow-mastercard" width="32" height="21">
-        <use href="./images/icon.svg#mastercard"></use>
+        <use href="../img/icons.svg#mastercard"></use>
       </svg>
     </label>
     <label class="buynow-label" for=""
