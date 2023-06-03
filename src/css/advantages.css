@@ -2,6 +2,7 @@
     background-color: var(--black-second-color);
     padding-top: 20px;
     padding-bottom: 20px;
+    
 }
    
 @media only screen and (min-width: 768px) {
@@ -14,7 +15,7 @@
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -75,6 +76,7 @@
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
 }
 
 /* .advantages-text::after{
