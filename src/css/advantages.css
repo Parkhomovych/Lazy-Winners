@@ -79,12 +79,15 @@
     margin-bottom: 20px;
 }
 
-/* .advantages-text::after{
-    content: '';
-    display: block;
-    width: 124px;
-    height: 0;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    transform: rotate(90deg);
+
+/* @media only screen and (min-width: 1200px) {
+    .advantages-text::after {
+            content: '';
+            display: block;
+            width: 124px;
+            height: 0;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transform: rotate(90deg);
+}
 } */
 
