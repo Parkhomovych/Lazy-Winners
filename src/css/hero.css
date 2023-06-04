@@ -1,0 +1,154 @@
+.hero-section {
+    padding-bottom: 20px;
+    background-color: var(--bg-color);
+    /* background-color: red; */
+}
+
+.hero-bg {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url(/img/hero/bg-hero-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-bg {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+            url(/img/hero/bg-hero-mob@2x.jpg);
+    }
+}
+
+.hero-container {
+    justify-content: flex-end;
+    padding: 20px;
+    height: 621px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px 0;
+    border-radius: 5%;
+}
+
+.hero-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--white-color);
+}
+
+.hero-wrap__btns {
+    display: flex;
+
+    flex-direction: column;
+    gap: 32px 0;
+
+}
+
+@media (min-width: 768px) {
+    .hero-wrap__btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.hero-wrap__actions {
+    display: flex;
+    gap: 0 14px;
+}
+
+.hero-wrap__scroll-down {
+    display: flex;
+}
+
+.hero-btn__modal {
+    padding: 12px 28px;
+    border-radius: 100px;
+    border: none;
+    background: var(--orange-color);
+}
+
+
+.hero-btn__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white-color);
+}
+
+
+
+.hero-btn__made {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 100px;
+    background: transparent;
+    border:1px solid var(--white-color);
+    cursor: pointer;
+
+}
+.hero-btn__made:hover,
+.hero-btn__made:focus {
+    border-color: var(--orange-color);
+  
+}
+
+.hero-btn__made:hover span,
+.hero-btn__made:focus span {
+    color: var(--orange-color);
+}
+
+.hero-btn__modal:hover,
+.hero-btn__modal:focus {
+    background: #FCF1E0;
+    border: none;
+}
+.hero-btn__modal:hover span,
+.hero-btn__modal:focus span {
+    color: var(--orange-color);
+}
+
+
+.text-buy__now:hover,
+.text-buy__now:focus {
+    color: var(--orange-color);
+}
+
+
+.scroll-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    color: var(--white-color);
+    margin-right: 12px;
+}
+
+.scroll-btn {
+    border-radius: 50%;
+    border: none;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.scroll-icon{
+    fill:var(--orange-color);
+}
+
+@media only screen and (min-width: 768px) {
+   .scroll-btn{
+    width: 38px;
+    height: 38px;
+  }
+}
