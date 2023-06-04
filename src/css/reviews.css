@@ -1,0 +1,101 @@
+.reviews-section {
+  padding: 128px 0;
+  background-color: #fafafa;
+}
+.reviews-title {
+  margin-bottom: 91px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: var(--black-firs-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviews-logo {
+  color: var(--orange-color);
+}
+
+.reviews-list {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 31px;
+}
+.reviews-item {
+  position: relative;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+}
+
+.reviews-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.reviews-name {
+  margin-top: 56px;
+  margin-bottom: 24px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: var(--black-firs-color);
+}
+
+.reviews-desc {
+  width: 312px;
+  padding: 0 24px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.reviews-button {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 40px;
+
+  background-color: inherit;
+  border: 1px solid var(--orange-color);
+  border-radius: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--black-firs-color);
+
+  transition: color var(--duration-and-timing-function),
+    background-color var(--duration-and-timing-function);
+}
+
+.reviews-button:hover,
+.reviews-button:focus {
+  color: var(--white-color);
+  background-color: var(--orange-color);
+}
