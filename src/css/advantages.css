@@ -63,7 +63,6 @@
 }
 
 .advantages-subtitle {
-    font-family: "Monserrat";
     font-weight: 600;
     font-size: 18px;
     line-height: 1.2;
@@ -72,7 +71,6 @@
 }
 
 .advantages-text {
-    font-family: "Monserrat";
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
@@ -82,8 +80,8 @@
 }
 
 
-/* @media only screen and (min-width: 1200px) {
-    .advantages-text::after {
+ @media only screen and (min-width: 1200px) {
+    .advantages-item::before {
             content: '';
             display: block;
             width: 124px;
@@ -91,5 +89,5 @@
             border: 1px solid rgba(255, 255, 255, 0.5);
             transform: rotate(90deg);
 }
-}  */
+} 
 
