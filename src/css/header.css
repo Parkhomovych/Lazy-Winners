@@ -144,4 +144,8 @@
   .mobile-menu-open {
     display: none;
   }
+
+  .mobile-menu {
+    display: none;
+  }
 }
