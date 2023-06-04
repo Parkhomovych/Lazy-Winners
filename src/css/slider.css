@@ -9,7 +9,11 @@
 }
 .swiper-wrapper {
   display: flex;
-  gap: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .swiper-wrapper {
+    gap: 18px;
+  }
 }
 .swiper-slide {
   flex-shrink: unset;
@@ -22,4 +26,16 @@
 .swiper-pagination {
   width: 236px;
   height: 13px;
+}
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: rgba(17, 17, 17, 0.1);
+
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 50px;
+  background-color: #fd9222;
 }
