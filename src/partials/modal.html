@@ -1,0 +1,216 @@
+<!-- |============| Modal window 1 |============================ */ -->
+
+<div class="modal" data-modal="1">
+  <h2 class="buynow-title"><span class="buynow-title-buy">BUY</span> NOW</h2>
+  <ul class="buynow-list list">
+    <li>
+      <div class="buynow-chocolate">
+        <picture>
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/100.jpg 1x, ../img/buy-now/100@2x.jpg 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/100.jpg 1x, ../img/buy-now/100@2x.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/100-mob.jpg    1x,
+              ../img/buy-now/100-mob@2x.jpg 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/100-mob.jpg    1x,
+              ../img/buy-now/100-mob@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="card-img"
+            src="../img/buy-now/100-mob.jpg"
+            alt="chocolate-nuts"
+            width="84"
+            height="69"
+            loading="lazy"
+          />
+        </picture>
+        <button class="buynow-chocolate-btn" type="button">100 g</button>
+      </div>
+    </li>
+    <li>
+      <div class="buynow-chocolate">
+        <picture>
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/200.jpg 1x, ../img/buy-now/200@2x.jpg 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/200.jpg 1x, ../img/buy-now/200@2x.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/200-mob.jpg    1x,
+              ../img/buy-now/200-mob@2x.jpg 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/200-mob.jpg    1x,
+              ../img/buy-now/200-mob@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="card-img"
+            src="../img/buy-now/200-mob.jpg"
+            alt="chocolate-bonbon-milk"
+            width="84"
+            height="69"
+            loading="lazy"
+          />
+        </picture>
+        <button class="buynow-chocolate-btn" type="button">200 g</button>
+      </div>
+    </li>
+    <li></li>
+    <li>
+      <div class="buynow-chocolate">
+        <picture>
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/300.jpg 1x, ../img/buy-now/300@2x.jpg 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../img/buy-now/300.jpg 1x, ../img/buy-now/300@2x.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/300-mob.jpg    1x,
+              ../img/buy-now/300-mob@2x.jpg 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/buy-now/300-mob.jpg    1x,
+              ../img/buy-now/300-mob@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="card-img"
+            src="../img/buy-now/300-mob.jpg"
+            alt="chocolate-bonbon-milk"
+            width="84"
+            height="69"
+            loading="lazy"
+          />
+        </picture>
+        <button class="buynow-chocolate-btn" type="button">300 g</button>
+      </div>
+    </li>
+  </ul>
+
+  <form class="buynow-form" action="">
+    <label class="buynow-label" for="personal_info"
+      ><span class="byunow-label-name">Personal information</span>
+      <input
+        class="buynow-input name-input"
+        type="text"
+        pattern=""
+        placeholder="Name"
+      />
+      <input
+        class="buynow-input"
+        type="text"
+        pattern=""
+        placeholder="Surname"
+      />
+    </label>
+    <label class="buynow-label" for="email"
+      ><span class="byunow-label-name">Email</span>
+      <input
+        class="buynow-input"
+        type="email"
+        pattern=""
+        placeholder="Enter your email"
+      />
+    </label>
+    <label class="buynow-label buynow-holder-number" for="phone_ number"
+      ><span class="byunow-label-name">Phone number</span>
+      <input
+        class="buynow-input icon-number"
+        type="tel"
+        placeholder="Phone number"
+      />
+      <div class="input-separator">
+        <svg class="" width="24" height="24">
+          <use href="../img/icons.svg#ua"></use>
+        </svg>
+        <p class="buynow-input-number">+380</p>
+      </div>
+    </label>
+    <label class="buynow-label" for="card_number"
+      ><span class="byunow-label-name">Card number</span>
+      <input
+        class="buynow-input"
+        type="text"
+        pattern="3-12"
+        placeholder="Enter card"
+      />
+      <svg class="buynow-mastercard" width="32" height="21">
+        <use href="../img/icons.svg#mastercard"></use>
+      </svg>
+    </label>
+    <label class="buynow-label" for=""
+      ><span class="byunow-label-name">Comment</span>
+      <textarea
+        class="buynow-textarea"
+        name="modal_comment"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
+    <button
+      class="buynow-for-btn"
+      type="submit
+    "
+    >
+      Submit
+    </button>
+  </form>
+
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+</div>
