@@ -45,7 +45,7 @@
 
     flex-direction: column;
     gap: 32px 0;
-
+    
 }
 
 @media (min-width: 768px) {
@@ -63,16 +63,25 @@
 
 .hero-wrap__scroll-down {
     display: flex;
+    align-items: center;
 }
 
 .hero-btn__modal {
-    padding: 12px 28px;
+    /* padding: 12px 28px; */
     border-radius: 100px;
     border: none;
     background: var(--orange-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
 }
 
-
+/* 
 .hero-btn__name {
     font-family: 'Montserrat';
     font-style: normal;
@@ -80,22 +89,32 @@
     font-size: 14px;
     line-height: 17px;
     color: var(--white-color);
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 
 
 .hero-btn__made {
-    padding: 12px 28px;
+    /* padding: 11px 27px; */
     border: none;
     border-radius: 100px;
     background: transparent;
     border:1px solid var(--white-color);
     cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white-color);
+    min-width: 159px;
+    height: 41px;
 
 }
 .hero-btn__made:hover,
 .hero-btn__made:focus {
     border-color: var(--orange-color);
+    
   
 }
 
@@ -108,11 +127,13 @@
 .hero-btn__modal:focus {
     background: #FCF1E0;
     border: none;
+    color: var(--orange-color);
 }
+/* 
 .hero-btn__modal:hover span,
 .hero-btn__modal:focus span {
     color: var(--orange-color);
-}
+} */
 
 
 .text-buy__now:hover,
