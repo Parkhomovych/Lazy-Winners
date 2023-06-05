@@ -127,7 +127,8 @@
   }
 }
 
-.topsellers-btn-open:hover {
+.topsellers-btn-open:hover,
+.topsellers-btn-open:focus {
   background: var(--hover-btn-color);
   color: var(--orange-color);
 }
