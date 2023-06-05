@@ -14,9 +14,9 @@
   width: 100%;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   text-align: center;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 24px;
 }
 @media only screen and (min-width: 375px) {
@@ -24,13 +24,9 @@
     width: 326px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
   .subs-text {
     width: 467px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
   }
 }
 .subs-title {
@@ -44,7 +40,7 @@
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media only screen and (min-width: 375px) {
   .subs-title {
@@ -85,7 +81,7 @@
   margin-right: auto;
   width: 128px;
   height: 41px;
-  background: #FD9222;
+  background: #fd9222;
   border-radius: 100px;
   border: none;
 }
@@ -99,7 +95,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .subs-btn-text {
