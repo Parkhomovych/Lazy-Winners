@@ -145,6 +145,19 @@
     padding-left: 53px;
   }
 
+  .nav-mobile-link:active,
+  .nav-mobile-link:hover,
+  .nav-mobile-link:focus {
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .nav-mobile-link:active::after,
+  .nav-mobile-link:hover::after,
+  .nav-mobile-link:focus::after {
+    display: none;
+  }
+
   .social-mobile-list-instagram {
     width: 24px;
     height: 24px;
