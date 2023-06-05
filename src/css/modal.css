@@ -26,7 +26,7 @@
   max-width: 311px;
   height: 95%;
   max-height: 584px;
-  overflow: scroll;
+  overflow: auto;
 
   position: fixed;
   top: 50%;
@@ -37,6 +37,16 @@
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   background-color: var(--bg-color);
+
+  transition: var(--duration-and-timing-function);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    padding: 48px;
+    max-width: 609px;
+    max-height: 1058px;
+  }
 }
 
 .modal.active,
@@ -81,11 +91,40 @@
   border-radius: 15px;
 }
 
+@media only screen and (min-width: 768px) {
+  .buynow-chocolate {
+    padding: 24px 20px 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .buynow-chocolate {
+    flex-direction: column;
+    width: 160px;
+    height: 196px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card-img {
+    width: 120px;
+    height: 107px;
+  }
+}
+
 .buynow-list {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
   margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .buynow-list {
+    flex-direction: row;
+    column-gap: 16px;
+    margin-bottom: 40px;
+  }
 }
 
 .buynow-chocolate-btn {
@@ -97,6 +136,13 @@
   background: var(--bg-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .buynow-chocolate-btn {
+    width: 96px;
+    height: 33px;
+  }
 }
 
 .buynow-form {
@@ -115,8 +161,11 @@
   margin-bottom: 18px;
 }
 
-.buynow-label:not(:last-child) {
-  margin-bottom: 8px;
+@media only screen and (min-width: 768px) {
+  .buynow-label-personal {
+    display: flex;
+    gap: 21px;
+  }
 }
 
 .byunow-label-name {
@@ -132,13 +181,16 @@
 }
 
 .buynow-input {
+  position: relative;
   width: 100%;
   height: 45px;
+  padding-left: 10px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
   outline: none;
   background-color: var(--bg-color);
+  transition: border-color var(--duration-and-timing-function);
 }
 
 .buynow-input:focus {
@@ -146,7 +198,7 @@
 }
 
 .buynow-input::placeholder {
-  padding-left: 18px;
+  padding-left: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
@@ -154,6 +206,9 @@
 }
 
 .icon-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
   padding-left: 100px;
 }
 
@@ -211,6 +266,7 @@
   letter-spacing: -0.02em;
   padding-left: 7px;
   padding-top: 7px;
+  transition: border-color var(--duration-and-timing-function);
 }
 
 .buynow-textarea:focus {
@@ -234,6 +290,7 @@
   background: var(--orange-color);
   border-radius: 100px;
   border: none;
+  transition: background-color var(--duration-and-timing-function);
 }
 
 .buynow-for-btn:hover {
