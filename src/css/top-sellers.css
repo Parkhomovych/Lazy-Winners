@@ -100,7 +100,7 @@
   }
 }
 
-.js-open-modal {
+.js-open-modal[data-modal='1'] {
   display: block;
   width: 120px;
   height: 41px;
@@ -119,13 +119,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .js-open-modal {
+  .js-open-modal[data-modal='1'] {
     margin-right: 0;
     font-size: 18px;
   }
 }
 
-.js-open-modal:hover {
+.js-open-modal[data-modal='1']:hover {
   background: var(--hover-btn-color);
   color: var(--orange-color);
 }
