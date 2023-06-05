@@ -269,6 +269,12 @@
   transition: border-color var(--duration-and-timing-function);
 }
 
+@media only screen and (min-width: 768px) {
+  .buynow-textarea {
+    height: 137px;
+  }
+}
+
 .buynow-textarea:focus {
   border-color: var(--orange-color);
 }
@@ -296,4 +302,11 @@
 .buynow-for-btn:hover {
   background: var(--hover-btn-color);
   color: var(--orange-color);
+}
+
+@media only screen and (min-width: minwidthpx) {
+  .buynow-for-btn {
+    width: 133px;
+    height: 45px;
+  }
 }
