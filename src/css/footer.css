@@ -1,0 +1,182 @@
+.footer {
+    background:#1E1823;
+}
+.footer-container {
+display: flex;
+flex-wrap: wrap;
+
+padding-top: 50px;
+padding-left: 32px;
+padding-bottom: 50px;
+background:#1E1823;
+
+}
+.footer-text-link {
+    width: 300px;
+    margin-bottom: 78px;
+}
+
+
+
+
+.footer-text {
+font-family: 'Montserrat';
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: -0.02em;
+color: #FD9222;
+}
+
+
+
+
+ 
+ .footer-cocial-link {
+    display: flex;
+
+ }   
+    
+
+
+.footer-text-white {
+    color: #FFFFFF;
+}
+
+
+.footer-address-text {
+display: flex;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+color: #FFFFFF;
+padding-bottom: 14px;
+}
+
+.footer-list {
+display: flex;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+}
+.footer-menu-link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}
+.footer-icon {
+    stroke: #FFFFFF;
+}
+.footer-cocial-link {
+    gap: 18px;
+}
+
+.footer-list {
+    gap: 4px;
+}
+
+
+
+
+.footer-menu-list {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+gap: 24px;
+
+}
+
+.footer-a-before::before {
+ position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 335px;
+  height: 4px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  content: "";
+  margin: 0 auto;
+
+}
+.footer-a-before {
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 767px) {
+    .footer-menu-link {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+        padding-top: 64px;
+        margin-left: 0;
+    }
+.footer-container {
+    padding-top: 32px;
+    padding-left: 20px;
+}
+.footer-text-link {
+    margin-bottom: 32px;
+}
+.footer-cocial-menu {
+    margin-left: 0;
+    
+}
+.footer-cocial-link {
+    display: flex;
+}
+.footer-cocial-link {
+    gap: 14px;
+}
+
+}
+
+ @media screen and (min-width: 768px) {
+    .footer-cocial-menu {
+        margin-left: auto;
+        }
+        .footer-icon {
+            width: 24px;
+            height: 24px;
+        }
+   
+} 
+
+@media screen and (min-width: 1200px) {
+    .footer-cocial-menu {
+        margin-left: auto;
+        }
+        .footer-cocial-link {
+            display: flex;
+        }
+        .footer-menu-link {
+            display: flex;
+            
+            width: 100%;
+            gap: 24px;
+            padding-top: 64px;
+            margin-left: 0;
+        }
+        .footer-icon {
+            width: 24px;
+            height: 24px;
+        }
+   
+} 
