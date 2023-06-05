@@ -16,7 +16,7 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(../img/hero/bg-hero-mob.jpg);
+      url(/img/hero/bg-hero-mob.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -28,7 +28,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url(../img/hero/bg-hero-mob@2x.jpg);
+        url(/img/hero/bg-hero-mob@2x.jpg);
     }
   }
 }
@@ -39,7 +39,7 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(../img/hero/bg-hero-tab.jpg);
+      url(/img/hero/bg-hero-tab.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -51,7 +51,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url(../img/hero/bg-hero-tab@2x.jpg);
+        url(/img/hero/bg-hero-tab@2x.jpg);
     }
   }
 }
@@ -63,7 +63,7 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(../img/hero/bg-hero-desk.jpg);
+      url(/img/hero/bg-hero-desk.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -75,7 +75,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url(../img/hero/bg-hero-desk@2x.jpg);
+        url(/img/hero/bg-hero-desk@2x.jpg);
     }
   }
 }

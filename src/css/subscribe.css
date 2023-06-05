@@ -112,7 +112,7 @@
   background-position: center;
   background-size: cover;
   perspective: 500px;
-  background-image: url(../img/subscribe/subcribe-mob.jpg);
+  background-image: url(/img/subscribe/subcribe-mob.jpg);
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -123,7 +123,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/subscribe/subcribe-mob@2x.jpg);
+      url(/img/subscribe/subcribe-mob@2x.jpg);
   }
 }
 @media screen and (min-width: 376px) {
@@ -133,7 +133,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/subscribe/subcribe-tab.jpg);
+      url(/img/subscribe/subcribe-tab.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -144,7 +144,7 @@
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
         ),
-        url(../img/subscribe/subcribe-tab@2x.jpg);
+        url(/img/subscribe/subcribe-tab@2x.jpg);
     }
   }
 }
@@ -155,7 +155,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/subscribe/subcribe-desc.jpg);
+      url(/img/subscribe/subcribe-desc.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -166,7 +166,7 @@
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
         ),
-        url(../img/subscribe/subcribe-desc@2x.jpg);
+        url(/img/subscribe/subcribe-desc@2x.jpg);
     }
   }
 }
