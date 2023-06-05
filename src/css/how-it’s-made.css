@@ -1,3 +1,9 @@
+/* Section how-it's-made */
+
+.how-made {
+  padding-bottom: 72px;
+}
+
 .how-made-container {
 }
 
@@ -9,9 +15,6 @@
   .how-made-container.container {
     padding-left: 77px;
     padding-right: 77px;
-
-    /* outline: 2px solid red;
-    outline-offset: -2px; */
   }
 }
 
@@ -54,17 +57,17 @@
 
 .how-made-img-wrap {
   position: relative;
-}
-
-.how-made-img {
   margin-bottom: 20px;
-  display: block;
 }
 
 @media only screen and (min-width: 1200px) {
-  .how-made-img {
+  .how-made-img-wrap {
     margin-bottom: 0;
   }
+}
+
+.how-made-img {
+  display: block;
 }
 
 .how-made-btn {
