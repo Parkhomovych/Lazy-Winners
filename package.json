@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/<Lazy-Winners>/",
+    "build": "vite build --base=/Lazy-Winners/",
     "preview": "vite preview"
   },
   "devDependencies": {
