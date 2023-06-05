@@ -139,7 +139,7 @@
   align-items: center;
 }
 
-.hero-btn__modal {
+.hero-wrap__btns .hero-wrap__actions .hero-btn__modal {
   border-radius: 100px;
   border: none;
   background: var(--orange-color);
@@ -154,30 +154,16 @@
   transition: all 0.3s ease;
 }
 @media only screen and (max-width: 374px) {
-  .hero-btn__modal {
+  .hero-wrap__btns .hero-wrap__actions .hero-btn__modal {
     min-width: 110px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .hero-btn__modal {
+  .hero-wrap__btns .hero-wrap__actions .hero-btn__modal {
     min-width: 144px;
     height: 44px;
   }
 }
-
-/* 
-.hero-btn__name {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: var(--white-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .hero-btn__made {
   border: none;
   border-radius: 100px;
