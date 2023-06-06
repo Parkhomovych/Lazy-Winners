@@ -116,81 +116,78 @@
     </li>
   </ul>
 
-  <form class="buynow-form" action="">
-    <label class="buynow-label" for="personal_info"
-      ><span class="byunow-label-name">Personal information</span>
-      <div class="buynow-label-personal">
-        <input
-          class="buynow-input name-input"
-          type="text"
-          id="personal_info"
-          placeholder="Name"
-          pattern="[a-z]{1,15}"
-        />
-        <input
-          class="buynow-input"
-          type="text"
-          pattern="[a-z]{1,15}"
-          name="personal_info"
-          id="personal_info"
-          placeholder="Surname"
-        />
-      </div>
-    </label>
-    <label class="buynow-label" for="email"
-      ><span class="byunow-label-name">Email</span>
+  <form class="buynow-form">
+    <label class="buynow-label" for="personal_info">Personal information</label>
+    <div class="buynow-label-personal">
+      <input
+        name="personal_info"
+        id="personal_info"
+        class="buynow-input name-input"
+        type="text"
+        placeholder="Name"
+        pattern="\w{3,16}"
+      />
+      <input
+        class="buynow-input"
+        type="text"
+        pattern="\w{3,16}"
+        name="personal_info"
+        placeholder="Surname"
+      />
+    </div>
+    <label class="buynow-label" for="email">Email </label>
+    <div class="buynow-label-email">
       <input
         class="buynow-input"
         type="email"
         name="email"
+        id="email"
         pattern="(?=.*\d)(?=.*[a-z]).{3,}"
         placeholder="Enter your email"
       />
-    </label>
-    <label class="buynow-label buynow-holder-number" for="phone_ number"
-      ><span class="byunow-label-name">Phone number</span>
+    </div>
+    <label class="buynow-label buynow-holder-number" for="phone_number"
+      >Phone number</label
+    >
+    <div class="buynow-label-phone">
       <input
         class="buynow-input icon-number"
         type="tel"
-        name="phone_ number"
+        id="phone_number"
+        name="phone_number"
         pattern="[0-9]{3}"
         placeholder="Phone number"
       />
       <div class="input-separator">
-        <svg class="" width="24" height="24">
+        <svg class="buynow-svg-ua" width="24" height="24">
           <use href="/img/icons.svg#ua"></use>
         </svg>
         <p class="buynow-input-number">+380</p>
       </div>
-    </label>
-    <label class="buynow-label" for="card_number"
-      ><span class="byunow-label-name">Card number</span>
+    </div>
+
+    <label class="buynow-label" for="card_number">Card number</label>
+    <div class="buynow-label-card">
       <input
         class="buynow-input"
+        id="card_number"
         type="text"
         name="card_number"
-        pattern="3-12"
+        pattern="[0-9\s]{13,19}"
         placeholder="Enter card"
       />
       <svg class="buynow-mastercard" width="32" height="21">
         <use href="/img/icons.svg#mastercard"></use>
       </svg>
-    </label>
-    <label class="buynow-label" for="modal_comment"
-      ><span class="byunow-label-name">Comment</span>
-      <textarea
-        class="buynow-textarea"
-        name="modal_comment"
-        placeholder="Enter text"
-      ></textarea>
-    </label>
-    <button
-      class="buynow-for-btn"
-      type="submit
-    "
-    >
-      Submit
-    </button>
+    </div>
+    <label class="buynow-label" for="modal_comment">Comment </label>
+    <textarea
+      id="modal_comment"
+      class="buynow-textarea"
+      name="modal_comment"
+      placeholder="Enter text"
+    ></textarea>
+    <button class="buynow-for-btn" type="submit" value="Submit">Submit</button>
   </form>
 
   <!--   Svg иконка для закрытия окна  -->
