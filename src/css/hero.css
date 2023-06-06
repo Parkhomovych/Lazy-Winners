@@ -177,6 +177,9 @@
 .hero-btn__made {
   min-width: 159px;
   height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border: none;
   border-radius: 100px;
@@ -233,13 +236,13 @@
   transition: background-color var(--duration-and-timing-function);
 }
 
-.scroll-link:hover button,
-.scroll-link:focus button {
+.scroll-link:hover .scroll-btn,
+.scroll-link:focus .scroll-btn {
   background-color: var(--orange-color);
 }
 
-.scroll-link:hover button > svg,
-.scroll-link:focus button > svg {
+.scroll-link:hover .scroll-btn > svg,
+.scroll-link:focus .scroll-btn > svg {
   fill: var(--white-color);
 }
 
@@ -267,13 +270,15 @@
 }
 
 .scroll-btn {
-  border-radius: 50%;
-  border: none;
   width: 28px;
   height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
 
   transition: background-color var(--duration-and-timing-function);
 }
