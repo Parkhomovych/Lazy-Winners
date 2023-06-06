@@ -35,6 +35,80 @@
         </p>
       </li>
     </ul>
-    <button class="reviews-button">Leave a review</button>
+    <button class="reviews-button js-open-modal" data-modal="2">
+      Leave a review
+    </button>
   </div>
 </section>
+<div class="modal" data-modal="2">
+  <button type="button" class="reviews-modal-btn js-modal-close">
+    <svg
+      class="reviews-modal-close-icon js-modal-close"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+      />
+    </svg>
+  </button>
+  <h2 class="reviews-modal-title">
+    leave a review about <span class="reviews-logo">our chocolate</span>
+  </h2>
+  <form action="" class="reviews-form">
+    <div class="reviews-form-wrapper">
+      <label for="user_name" class="reviews-form-lable"></label>
+      <input
+        class="reviews-modal-input"
+        type="text"
+        name="user_name"
+        id="user_name"
+        pattern="[a-z]{1,15}"
+        placeholder="Name"
+        required
+      />
+    </div>
+
+    <div class="reviews-form-wrapper">
+      <label for="email" class="reviews-form-lable"></label>
+      <input
+        class="reviews-modal-input"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+
+    <div class="reviews-form-wrapper">
+      <label for="tel" class="reviews-form-lable"></label>
+      <input
+        class="reviews-modal-tel"
+        type="tel"
+        name="tel"
+        id="tel"
+        minlength="10"
+        placeholder="Phone number"
+      />
+      <div class="reviews-tell-numb">
+        <svg class="reviws-tel-icon" width="24" height="24">
+          <use href="../img/icons.svg#ua"></use>
+        </svg>
+        <p class="reviews-tell-text">+380</p>
+      </div>
+    </div>
+
+    <div class="reviews-form-wrapper">
+      <label for="comment" class="reviews-form-lable"></label>
+      <textarea
+        class="reviews-modal-comment"
+        name="comment"
+        id="comment"
+        placeholder="Enter text"
+      ></textarea>
+    </div>
+    <button type="submit" class="reviews-btn-send">Send</button>
+  </form>
+</div>
+<div class="overlay js-overlay-modal"></div>

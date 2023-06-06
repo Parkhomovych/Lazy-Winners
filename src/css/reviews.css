@@ -121,12 +121,14 @@
     padding: 0 24px 24px;
   }
 }
-.reviews-button {
+.reviews-section .reviews-button {
   display: block;
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
   padding: 12px 28px;
+  width: 165px;
+  height: 41px;
 
   background-color: inherit;
   border: 1px solid var(--orange-color);
@@ -152,5 +154,266 @@
     padding: 14px 40px;
 
     font-size: 18px;
+  }
+
+  /* MODAL REVIEWS FORM */
+}
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 20;
+}
+
+.overlay.js-overlay-modal {
+}
+
+.modal[data-modal='2'] {
+  padding: 32px 24px;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 311px;
+  max-height: 471px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal[data-modal='2'] {
+    padding: 40px;
+    max-width: 517px;
+    max-height: 628px;
+  }
+}
+
+.modal[data-modal='2'].active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.reviews-modal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-modal-btn {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+}
+.reviews-modal-close-icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  fill: var(--black-firs-color);
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-modal-close-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.reviews-modal-title {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  min-width: 255px;
+  min-height: 48px;
+
+  color: var(--black-firs-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-modal-title {
+    margin-bottom: 40px;
+    min-width: 298px;
+    min-height: 56px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.reviews-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.reviews-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 14px;
+}
+.reviews-form-wrapper:nth-last-child(2) {
+  margin-bottom: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-form-wrapper {
+    margin-bottom: 18px;
+  }
+}
+.reviews-modal-input {
+  width: 100%;
+  padding: 14px 18px;
+  height: 45px;
+  outline: transparent;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+
+  transition: border-color var(--duration-and-timing-function);
+}
+.reviews-modal-input:focus {
+  border-color: var(--orange-color);
+}
+
+.reviews-modal-tel {
+  width: 100%;
+  padding-left: 106px;
+  height: 45px;
+  outline: transparent;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+
+  transition: border var(--duration-and-timing-function);
+}
+.reviews-modal-tel:focus {
+  border: 1.5px solid var(--orange-color);
+}
+
+.reviews-tell-numb {
+  width: 74px;
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+
+  gap: 8px;
+  margin-left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.reviws-tel-icon {
+  width: 24px;
+  height: 18px;
+}
+
+.reviews-tell-text {
+  width: 34px;
+  height: 17px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.reviews-modal-comment {
+  width: 100%;
+  padding: 14px 18px;
+  height: 91px;
+  outline: transparent;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+
+  transition: border var(--duration-and-timing-function);
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-modal-input {
+    padding: 22px 24px;
+    height: 66px;
+  }
+  .reviews-modal-tel {
+    height: 66px;
+    padding-left: 177px;
+  }
+  .reviews-tell-numb {
+    width: 125px;
+    gap: 18px;
+    margin-left: 24px;
+
+    box-shadow: 2.72246px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+  .reviws-tel-icon {
+    width: 32px;
+    height: 24px;
+  }
+  .reviews-tell-text {
+    font-size: 18px;
+  }
+  .reviews-modal-comment {
+    padding: 22px 24px;
+    height: 137px;
+  }
+}
+
+.reviews-modal-comment:focus {
+  border: 1.5px solid var(--orange-color);
+}
+
+.reviews-btn-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93px;
+  height: 41px;
+
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 100px;
+  background-color: var(--orange-color);
+
+  transition: color var(--duration-and-timing-function),
+    background-color var(--duration-and-timing-function);
+}
+
+.reviews-btn-send:hover,
+.reviews-btn-send:focus {
+  color: var(--orange-color);
+  background-color: var(--hover-btn-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-btn-send {
+    width: 117px;
+    height: 45px;
   }
 }
