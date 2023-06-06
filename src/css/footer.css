@@ -101,6 +101,9 @@
   display: flex;
   gap: 14px;
 }
+.footer-icon-link {
+  fill: none;
+}
 .footer-icon-link:hover .footer-icon,
 .footer-icon-link:focus .footer-icon {
   stroke: var(--orange-color);
