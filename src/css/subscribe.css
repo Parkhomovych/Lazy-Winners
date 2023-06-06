@@ -81,9 +81,18 @@
   margin-right: auto;
   width: 128px;
   height: 41px;
+
+  color: #ffffff;
   background: #fd9222;
   border-radius: 100px;
   border: none;
+
+  transition: background-color var(--duration-and-timing-function);
+}
+.subs-btn:hover,
+.subs-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .subs-btn {
@@ -95,7 +104,12 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  color: #ffffff;
+
+  transition: color var(--duration-and-timing-function);
+}
+.subs-btn:hover .subs-btn-text,
+.subs-btn:focus .subs-btn-text {
+  color: #fd9222;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .subs-btn-text {
