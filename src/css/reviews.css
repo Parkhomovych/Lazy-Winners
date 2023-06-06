@@ -152,6 +152,8 @@
   .reviews-button {
     margin-top: 50px;
     padding: 14px 40px;
+    width: 222px;
+    height: 50px;
 
     font-size: 18px;
   }
@@ -271,7 +273,6 @@
   flex-direction: column;
 }
 
-
 .reviews-form-wrapper {
   display: flex;
   flex-direction: column;
@@ -322,7 +323,7 @@
   align-items: center;
 
   position: absolute;
-  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+  border-right: 1.5px solid rgba(0, 0, 0, 0.1);
 
   gap: 8px;
   margin-left: 18px;
@@ -367,7 +368,7 @@
     gap: 18px;
     margin-left: 24px;
 
-    box-shadow: 2.72246px 0px 0px rgba(0, 0, 0, 0.1);
+    border-right: 2.72246px solid rgba(0, 0, 0, 0.1);
   }
   .reviws-tel-icon {
     width: 32px;
