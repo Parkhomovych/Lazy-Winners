@@ -142,8 +142,8 @@
     background-color var(--duration-and-timing-function);
 }
 
-.reviews-section .reviews-button :hover,
-.reviews-section .reviews-button :focus {
+.reviews-section .reviews-button:hover,
+.reviews-section .reviews-button:focus {
   color: var(--white-color);
   background-color: var(--orange-color);
 }
