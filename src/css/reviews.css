@@ -142,14 +142,14 @@
     background-color var(--duration-and-timing-function);
 }
 
-.reviews-button:hover,
-.reviews-button:focus {
+.reviews-section .reviews-button :hover,
+.reviews-section .reviews-button :focus {
   color: var(--white-color);
   background-color: var(--orange-color);
 }
 
 @media only screen and (min-width: 768px) {
-  .reviews-button {
+  .reviews-section .reviews-button {
     margin-top: 50px;
     padding: 14px 40px;
     width: 222px;
