@@ -297,7 +297,7 @@
 
   transition: border-color var(--duration-and-timing-function);
 }
-.reviews-modal-input:focus-visible {
+.reviews-modal-input:focus {
   border-color: var(--orange-color);
 }
 
