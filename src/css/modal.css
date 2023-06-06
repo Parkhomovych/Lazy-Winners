@@ -394,3 +394,190 @@
     height: 45px;
   }
 }
+
+/**
+  |============================
+  | Modal window 3
+  |============================
+*/
+
+/* Стили для модальных окон */
+
+.modal[data-modal='3'] {
+  opacity: 0;
+  visibility: hidden;
+  width: 311px;
+  height: 350px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 0;
+  border-radius: 15px;
+  background-color: var(--bg-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal[data-modal='3'] {
+    width: 538px;
+    height: 412px;
+  }
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal[data-modal='3'].active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.explore-img {
+  border: none;
+  width: 311px;
+  height: 169px;
+  background-image: url(../img/Explore-our-new/unsplash1mob.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .explore-img {
+    background-image: url(../img/Explore-our-new/unsplash1mob@2x.png);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .explore-img {
+    background-image: url(../img/Explore-our-new/unsplash1tab.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .explore-img {
+      background-image: url(../img/Explore-our-new/unsplas1tab@2x.png);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .explore-img {
+    width: 538px;
+    height: 196px;
+  }
+}
+
+.explore-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .explore-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 28px;
+  }
+}
+
+.explore-new-chocolate {
+  color: var(--orange-color);
+}
+
+.explore-form {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .explore-form {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.explore-content {
+  padding: 32px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .explore-content {
+    padding: 40px;
+  }
+}
+
+.explore-input {
+  padding-left: 15px;
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+  outline: none;
+}
+
+.explore-input:focus {
+  border-color: var(--orange-color);
+}
+
+.explore-input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-left: 3px;
+}
+
+@media only screen and (min-width: 768px) {
+  .explore-input {
+    width: 313px;
+    height: 52px;
+  }
+}
+
+.explore-bnt-submit {
+  left: 163px;
+  top: 0px;
+  position: absolute;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  width: 100px;
+  height: 45px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  background-color: var(--orange-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .explore-bnt-submit {
+    width: 137px;
+    height: 52px;
+    position: static;
+  }
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross-exp {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: var(--white-color);
+  cursor: pointer;
+}
