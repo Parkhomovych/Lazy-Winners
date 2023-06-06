@@ -171,7 +171,7 @@
       <input
         class="buynow-input"
         id="card_number"
-        type="text"
+        type="number"
         name="card_number"
         pattern="[0-9\s]{13,19}"
         placeholder="Enter card"
@@ -191,15 +191,17 @@
   </form>
 
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
+  <div class="modal__cross-buynow js-modal-close">
+    <svg
+      class="buynow-cross-close"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+      />
+    </svg>
+  </div>
 </div>
 
 <!-- /**
@@ -217,11 +219,12 @@
       <span class="explore-new-chocolate">new chocolate</span> first!
     </h2>
     <form class="explore-form">
-      <label class="" for="">
+      <label class="">
         <input
           class="explore-input"
-          type="text"
+          type="email"
           placeholder="Enter your email"
+          pattern="(?=.*\d)(?=.*[a-z]).{3,}"
         /> </label
       ><button class="explore-bnt-submit" type="submit" value="Submit">
         Submit
@@ -229,13 +232,15 @@
     </form>
   </div>
   <!-- Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross-exp js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
+  <div class="modal__cross-exp js-modal-close">
+    <svg
+      class="modal-cross-close"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+      />
+    </svg>
+  </div>
 </div>
