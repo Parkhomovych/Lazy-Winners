@@ -1,182 +1,112 @@
 .footer {
-    background:#1E1823;
+    background: #1E1823;
     padding-top: 32px;
     padding-bottom: 32px;
-    
-}
-
-@media screen and (min-width: 768px){
+  }
+  @media screen and (min-width: 768px) {
     .footer {
-        padding-top: 50px;
-        padding-bottom: 50px;}
-}
-.footer-box {
-   
-   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  .footer-box {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 32px;
     padding-bottom: 32px;
-}
-@media screen and (min-width: 768px){
+  }
+  @media screen and (min-width: 768px) {
     .footer-box {
-   
-        display: flex;
-        margin-bottom: 24px;
-        padding-bottom: 50px;
+      display: flex;
+      margin-bottom: 24px;
+      padding-bottom: 50px;
     }
-}
-
-
-.footer-cocial-menu {
+  }
+  @media only screen and (min-width: 1200px) {
+    .footer-box {
+      padding-bottom: 58px;
+    }
+  }
+  .footer-cocial-menu {
     display: flex;
     justify-content: space-between;
-
-}
-
-@media screen and (min-width: 768px){
+  }
+  @media screen and (min-width: 768px) {
     .footer-cocial-menu {
-        width: 280px;
-    
+      width: 280px;
     }
-}
-.footer-text-link {
+  }
+  .footer-text-link {
     width: 300px;
     margin-bottom: 78px;
-}
-
-
-
-
-.footer-text {
-width: 300px;
-font-weight: 500;
-font-size: 24px;
-line-height: 1.16;
-color: #FD9222;
-margin-bottom: 32px;
-
-}
-@media screen and (min-width: 768px){
-    .footer-text {
-        margin-right: auto;
-        
-        }
-}
-
-
-
-
- 
- 
-    
-
-
-.footer-text-white {
-    color: #FFFFFF;
-}
-
-
-.footer-address-text {
-font-weight: 500;
-font-size: 14px;
-line-height: 18px;
-
-color: #FFFFFF;
-margin-bottom: 32px;
-}
-
-.footer-contact {
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-
-letter-spacing: -0.02em;
-color: #FFFFFF;
-}
-.footer-menu-link {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-
-}
-.footer-icon {
-    stroke: #FFFFFF;
-}
-.footer-cocial-link {
-    display: flex;
-
-    gap: 14px;
-}
-
-
-
-
-
-
-.footer-menu-list {
-
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-
-
-color: #FFFFFF;
-
-
-}
-
-
-
-@media screen and (max-width: 767px) {
-    .footer-menu-link {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 24px;
-        
-    }
-.footer-container {
-    padding-top: 32px;
-    padding-left: 20px;
-}
-.footer-text-link {
+  }
+  .footer-text {
+    width: 300px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #FD9222;
     margin-bottom: 32px;
-}
-.footer-cocial-menu {
-    margin-left: 0;
-    
-}
-
-
-}
-
- @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 768px) {
+    .footer-text {
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+  .footer-cocial-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-text-white {
+    color: #FFFFFF;
+  }
+  .footer-address-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+  }
+  .footer-contact {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #FFFFFF;
+  }
+  .footer-menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  @media only screen and (min-width: 768px) {
+    .footer-menu-item {
+      flex-direction: row;
+    }
+  }
+  .footer-list:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  .footer-icon {
+    stroke: #FFFFFF;
+  }
+  .footer-cocial-link {
+    display: flex;
+    gap: 14px;
+  }
+  .footer-menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #FFFFFF;
+  }
+  @media screen and (min-width: 768px) {
     .footer-cocial-menu {
-        margin-left: auto;
-        }
-        .footer-icon {
-            width: 24px;
-            height: 24px;
-        }
-   
-} 
-
-@media screen and (min-width: 1200px) {
-    .footer-cocial-menu {
-        margin-left: auto;
-        }
-        
-        .footer-menu-link {
-            display: flex;
-            
-            width: 100%;
-            gap: 24px;
-            
-            margin-left: 0;
-        }
-        .footer-icon {
-            width: 24px;
-            height: 24px;
-        }
-   
-} 
+      margin-left: auto;
+    }
+    .footer-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
