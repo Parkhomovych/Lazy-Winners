@@ -1,4 +1,4 @@
-<!-- |============| Modal window 1 |============================ */ -->
+<!-- |========================| Modal window 1 |========================== */ -->
 
 <div class="modal" data-modal="1">
   <h2 class="buynow-title"><span class="buynow-title-buy">BUY</span> NOW</h2>
@@ -171,7 +171,7 @@
       <input
         class="buynow-input"
         id="card_number"
-        type="text"
+        type="number"
         name="card_number"
         pattern="[0-9\s]{13,19}"
         placeholder="Enter card"
@@ -190,7 +190,7 @@
     <button class="buynow-for-btn" type="submit" value="Submit">Submit</button>
   </form>
 
-  <!--   Svg иконка для закрытия окна  -->
+  <!--   Svg close modal  -->
   <svg
     class="modal__cross js-modal-close"
     xmlns="http://www.w3.org/2000/svg"
@@ -202,11 +202,7 @@
   </svg>
 </div>
 
-<!-- /**
-  |============================
-  | Modal window 3
-  |============================
-*/ -->
+<!-- /**========================== | Modal window 3  |=========================*/ -->
 
 <div class="modal" data-modal="3">
   <div class="explore-img"></div>
@@ -217,10 +213,10 @@
       <span class="explore-new-chocolate">new chocolate</span> first!
     </h2>
     <form class="explore-form">
-      <label class="" for="">
+      <label class="explore-label">
         <input
           class="explore-input"
-          type="text"
+          type="email"
           placeholder="Enter your email"
         /> </label
       ><button class="explore-bnt-submit" type="submit" value="Submit">
@@ -228,7 +224,7 @@
       </button>
     </form>
   </div>
-  <!-- Svg иконка для закрытия окна  -->
+  <!-- Svg close modal   -->
   <svg
     class="modal__cross-exp js-modal-close"
     xmlns="http://www.w3.org/2000/svg"
