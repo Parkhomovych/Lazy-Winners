@@ -218,8 +218,19 @@
   top: 14px;
   width: 24px;
   height: 24px;
+  border-radius: 50%;
   cursor: pointer;
   background-color: transparent;
+  transition: transform var(--duration-and-timing-function),
+    background-color var(--duration-and-timing-function),
+    color var(--duration-and-timing-function);
+}
+
+.reviews-modal-btn:hover,
+.reviews-modal-btn:focus {
+  background-color: #fcf1e0;
+  transform: scale(1.23);
+  color: #f16529;
 }
 
 @media only screen and (min-width: 768px) {
@@ -234,7 +245,7 @@
   width: 12px;
   height: 12px;
   position: absolute;
-  fill: var(--black-firs-color);
+  fill: currentColor;
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
@@ -319,6 +330,7 @@
 
 .reviews-tell-numb {
   width: 74px;
+  height: 25px;
   display: flex;
   align-items: center;
 
@@ -332,7 +344,7 @@
 }
 .reviws-tel-icon {
   width: 24px;
-  height: 18px;
+  height: 24px;
 }
 
 .reviews-tell-text {
@@ -365,6 +377,7 @@
   }
   .reviews-tell-numb {
     width: 125px;
+    height: 32px;
     gap: 18px;
     margin-left: 24px;
 
@@ -372,9 +385,10 @@
   }
   .reviws-tel-icon {
     width: 32px;
-    height: 24px;
+    height: 32 px;
   }
   .reviews-tell-text {
+    height: 22px;
     font-size: 18px;
   }
   .reviews-modal-comment {
