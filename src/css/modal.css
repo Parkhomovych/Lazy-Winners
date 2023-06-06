@@ -395,6 +395,49 @@
   }
 }
 
+.modal__cross-buynow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  fill: var(--black-firs-color);
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal__cross-buynow {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.modal__cross-buynow:hover,
+.modal__cross-buynow:focus {
+  transition: fill var(--duration-and-timing-function),
+    background-color var(--duration-and-timing-function);
+  fill: var(--orange-color);
+  background-color: var(--hover-btn-color);
+}
+
+.buynow-cross-close {
+  width: 12px;
+  height: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .buynow-cross-close {
+    width: 14px;
+    height: 14px;
+  }
+}
+
 /**
   |============================
   | Modal window 3
@@ -413,10 +456,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30; /* Должен быть выше чем у подложки*/
-
-  /*  Побочные стили   */
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
   padding: 0;
   border-radius: 15px;
   background-color: var(--bg-color);
@@ -439,7 +478,8 @@
 
 .explore-img {
   border: none;
-  width: 311px;
+  outline: none;
+  width: 100%;
   height: 169px;
   background-image: url(../img/Explore-our-new/unsplash1mob.png);
   background-position: center;
@@ -560,6 +600,14 @@
   justify-content: center;
   color: var(--white-color);
   background-color: var(--orange-color);
+  transition: color var(--duration-and-timing-function),
+    background-color var(--duration-and-timing-function);
+}
+
+.explore-bnt-submit:hover,
+.explore-bnt-submit:focus {
+  color: var(--orange-color);
+  background-color: var(--hover-btn-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -573,11 +621,44 @@
 /* Стили для кнопки закрытия */
 
 .modal__cross-exp {
-  width: 12px;
-  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 14px;
   fill: var(--white-color);
   cursor: pointer;
+  border-radius: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal__cross-exp {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.modal__cross-exp:hover,
+.modal__cross-exp:focus {
+  transition: fill var(--duration-and-timing-function),
+    background-color var(--duration-and-timing-function);
+  fill: var(--orange-color);
+  background-color: var(--hover-btn-color);
+}
+
+.modal-cross-close {
+  width: 12px;
+  height: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-cross-close {
+    width: 14px;
+    height: 14px;
+  }
 }
