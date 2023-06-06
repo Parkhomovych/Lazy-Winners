@@ -5,6 +5,7 @@
 
 .header-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -43,6 +44,8 @@
 }
 
 .mobile-menu-open {
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: 0;
   padding: 0;
@@ -103,7 +106,7 @@
     line-height: 1.14;
     color: var(--black-firs-color);
     position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--duration-and-timing-function);
   }
 
   .header-nav-link:active,
@@ -132,8 +135,7 @@
     justify-content: center;
     stroke: var(--black-firs-color);
     fill: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke var(--duration-and-timing-function);
   }
 
   .header-soc-link:focus,

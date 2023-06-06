@@ -138,6 +138,11 @@
   border-radius: 100px;
 }
 
+.buynow-chocolate-btn:hover,
+.buynow-chocolate-btn:focus {
+  border-color: var(--orange-color);
+}
+
 @media only screen and (min-width: 768px) {
   .buynow-chocolate-btn {
     width: 96px;
@@ -269,6 +274,12 @@
   transition: border-color var(--duration-and-timing-function);
 }
 
+@media only screen and (min-width: 768px) {
+  .buynow-textarea {
+    height: 137px;
+  }
+}
+
 .buynow-textarea:focus {
   border-color: var(--orange-color);
 }
@@ -293,7 +304,15 @@
   transition: background-color var(--duration-and-timing-function);
 }
 
+.buynow-for-btn:hover,
 .buynow-for-btn:hover {
   background: var(--hover-btn-color);
   color: var(--orange-color);
+}
+
+@media only screen and (min-width: minwidthpx) {
+  .buynow-for-btn {
+    width: 133px;
+    height: 45px;
+  }
 }

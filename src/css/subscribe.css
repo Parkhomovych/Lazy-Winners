@@ -14,9 +14,9 @@
   width: 100%;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   text-align: center;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 24px;
 }
 @media only screen and (min-width: 375px) {
@@ -24,13 +24,9 @@
     width: 326px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
   .subs-text {
     width: 467px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
   }
 }
 .subs-title {
@@ -44,7 +40,7 @@
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media only screen and (min-width: 375px) {
   .subs-title {
@@ -85,11 +81,20 @@
   margin-right: auto;
   width: 128px;
   height: 41px;
-  background: #FD9222;
+
+  color: #ffffff;
+  background: #fd9222;
   border-radius: 100px;
   border: none;
+
+  transition: background-color var(--duration-and-timing-function);
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+.subs-btn:hover,
+.subs-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+@media only screen and (min-width: 768px) {
   .subs-btn {
     width: 172px;
     height: 50px;
@@ -99,7 +104,12 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  color: #FFFFFF;
+
+  transition: color var(--duration-and-timing-function);
+}
+.subs-btn:hover .subs-btn-text,
+.subs-btn:focus .subs-btn-text {
+  color: #fd9222;
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .subs-btn-text {
@@ -112,7 +122,7 @@
   background-position: center;
   background-size: cover;
   perspective: 500px;
-  background-image: url(../img/subscribe/subcribe-mob.jpg);
+  background-image: url(/img/subscribe/subcribe-mob.jpg);
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -123,7 +133,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/subscribe/subcribe-mob@2x.jpg);
+      url(/img/subscribe/subcribe-mob@2x.jpg);
   }
 }
 @media screen and (min-width: 376px) {
@@ -133,7 +143,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/subscribe/subcribe-tab.jpg);
+      url(/img/subscribe/subcribe-tab.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -144,7 +154,7 @@
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
         ),
-        url(../img/subscribe/subcribe-tab@2x.jpg);
+        url(/img/subscribe/subcribe-tab@2x.jpg);
     }
   }
 }
@@ -155,7 +165,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/subscribe/subcribe-desc.jpg);
+      url(/img/subscribe/subcribe-desc.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -166,7 +176,7 @@
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
         ),
-        url(../img/subscribe/subcribe-desc@2x.jpg);
+        url(/img/subscribe/subcribe-desc@2x.jpg);
     }
   }
 }

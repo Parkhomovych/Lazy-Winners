@@ -10,6 +10,8 @@
 
 @media only screen and (min-width: 768px) {
   .topsellers-title {
+    margin-bottom: 50px;
+
     font-size: 24px;
     line-height: 1.17;
   }
@@ -120,12 +122,15 @@
 
 @media only screen and (min-width: 768px) {
   .topsellers-btn-open {
+    width: 162px;
+    height: 50px;
     margin-right: 0;
     font-size: 18px;
   }
 }
 
-.topsellers-btn-open:hover {
+.topsellers-btn-open:hover,
+.topsellers-btn-open:focus {
   background: var(--hover-btn-color);
   color: var(--orange-color);
 }
