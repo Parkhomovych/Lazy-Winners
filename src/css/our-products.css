@@ -86,7 +86,7 @@
   border-radius: 100px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   color: var(--black-firs-color);
   cursor: pointer;
 }

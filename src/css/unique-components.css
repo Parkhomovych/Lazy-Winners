@@ -214,7 +214,7 @@
 .components-subtitle {
   font-weight: 600;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111111;

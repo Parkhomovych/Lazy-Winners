@@ -36,7 +36,7 @@
   margin-bottom: 24px;
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -82,12 +82,16 @@
   width: 128px;
   height: 41px;
 
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
   color: #ffffff;
   background: #fd9222;
   border-radius: 100px;
   border: none;
 
-  transition: background-color var(--duration-and-timing-function);
+  transition: background-color var(--duration-and-timing-function),
+    color var(--duration-and-timing-function);
 }
 .subs-btn:hover,
 .subs-btn:focus {
@@ -98,21 +102,7 @@
   .subs-btn {
     width: 172px;
     height: 50px;
-  }
-}
-.subs-btn-text {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
 
-  transition: color var(--duration-and-timing-function);
-}
-.subs-btn:hover .subs-btn-text,
-.subs-btn:focus .subs-btn-text {
-  color: #fd9222;
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .subs-btn-text {
     font-size: 18px;
     line-height: 1.22;
   }
