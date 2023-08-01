@@ -223,6 +223,7 @@
   border-radius: 50%;
   cursor: pointer;
   background-color: transparent;
+  color: var(--black-firs-color);
   
   transition: transform var(--duration-and-timing-function),
     background-color var(--duration-and-timing-function),
