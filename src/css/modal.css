@@ -134,6 +134,7 @@
   width: 70px;
   height: 29px;
   background: var(--bg-color);
+  color: var(--black-firs-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   transform: border-color var(--duration-and-timing-function);
